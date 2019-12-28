@@ -1,4 +1,4 @@
-package org.playground.blackpink.graphql;
+package org.playground.blackpink.graphql.types;
 
 import graphql.annotations.annotationTypes.GraphQLField;
 import lombok.Data;
@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Data
 @NoArgsConstructor
-public class Boy {
+public class Boy implements Node{
   private int id;
 
   public Boy(int id) {
@@ -20,7 +20,11 @@ public class Boy {
 
   @GraphQLField
   public Long money() {
-    log.error("this is the new shit.");
     return id * 1000L;
+  }
+
+  @Override
+  public int id() {
+    return this.id;
   }
 }
