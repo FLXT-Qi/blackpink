@@ -1,0 +1,9 @@
+graphiql:
+  endpoint:
+    graphql: /graphql
+  enabled: true
+graphql:
+  servlet:
+    enabled: true
+    websocket:
+      enabled: off

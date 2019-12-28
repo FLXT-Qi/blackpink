@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "graphql.servlet.websocket.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Description for graphql.servlet.websocket.enabled."
+    }
+  ]
+}
